@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <title>Learn Chess</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="site.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+  
+<body>
+
+<nav id="nav01"></nav>
+
+  <div id="main">
+  <h1>Endgame</h1>
+  <p>
+    This section will be focusing on the endgame.  
+    The engame is the stage of a chess match after most of the major pieces has been traded off.
+    Ussualy either one player has a major piece, such as a rook or a queen, while the other player is left with just their king.
+    At other times neither player has any major pieces and each side has only pawns, in which case each player races to promote their pawns to a higher piece, allowing them to checkmate the opposition.  
+    This section will be walking you through varius scenarios and strategies to help you during this section of the game.
+  </p>
+  
+  <hr width="100%">
+
+  <h2>
+    Table of Contents
+  </h2>
+  <a href="#basiccheckmates">- Basic Checkmates</a>
+  <br>
+  <a href="#laddercheckmate"><span style="margin-left:2em"></span>- Ladder Checkmate</a>
+  <br>
+  <a href="#queencheckmate"><span style="margin-left:2em"></span>- Queen Checkmate</a>
+  <br>
+  <a href="#kingandpawnvsking">- King and Pawn vs King</a>
+
+  <hr width="100%">
+
+  <div id="basiccheckmates"></div>
+  <div id="laddercheckmate"></div>
+  <h2>Basic Checkmates</h2>
+  <p>
+    This section will discuss various basic checkmates which can be accompolished if during the endgame you still have major pieces such as rooks or queens.
+    We will start by discussing the ladder checkmate, a checkmate which can be accomplished with either two rook, two queens, or a queen and a rook.  
+    In this guide I will be demonstrating the checkmate with two rooks, but it will work the same with any of the other combinations.
+    This is an example starting position for this ckeckmate, two rooks lined up on adjacent files, and the enemy king at some other position on the board.  
+  </p>
+  <img src="images/52.png" class="center" style="width:50%;height:auto;">
+  <p>
+    To complete the ladder mate in this scenario, you simply move your rooks down the board, alternating which one you move, like this
+  </p>
+  <img src="images/53.png" class="center" style="width:50%;height:auto;">
+  <p>
+    Each time you move a piece it puts the enemy king in check, and the other rook blocks all of its escape squares to one side, forcing it to move the other way.  
+    Eventually this will drive the enemy king to the opposite end of the board, where it can no longer escape further down the board and is checkmated.  
+    If the enemy king manages to move close enough to one of your rooks to capture it, simply move it to the other side of the board, where it is safe.  
+    An example of a full ladder checkmate is below.
+  </p>
+  <iframe id="10810029" allowtransparency="true" frameborder="0" style="width:50%;border:none;" src="https://www.chess.com/emboard?id=10810029" class="center"></iframe>
+  <script>window.addEventListener("message",e=>{e['data']&&"10810029"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+  <div id="queencheckmate"></div>
+  <p>
+    Next we will discuss another important checkmate, the checkmate with a queen.  
+    This is one of the most common checkmates you will have to do in a chessgame, as it is quite common to go into the endgame with just a queen.  
+    We will start in the following position.  
+  </p>
+  <img src="images/54.png" class="center" style="width:50%;height:auto;">
+  <p>
+    Now our goal will be to force the enemy king into one of the corners of the board.  
+    It doesn't matter which one you pick, but in this case we will be forcing it to the upper right corner.  
+    To do this we will move our queen each move so that it is a knights move away from the king.  
+    This forces the king to make a move towards the corner.  
+    For example, we will play this as our first move.  
+  </p>
+  <img src="images/55.png" class="center" style="width:50%;height:auto;">
+  <p>
+    Now we can see that the king only has three moves available, any of which would move him towards one of the corners or edges.  
+    No matter which one he chooses we will once again be able to move our queen a nights move away from the king again to force it further towards one of the corners.  
+    We can continue this until the king is forced to one of the corners.  However be careful to leave it at least two squares to move in the corner, as otherwise, if it could not move, the game would be drawn by stalemate.  
+  </p>
+  <iframe id="10810073" allowtransparency="true" frameborder="0" style="width:50%;border:none;" src="https://www.chess.com/emboard?id=10810073" class="center"></iframe>
+  <script>window.addEventListener("message",e=>{e['data']&&"10810073"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+  <p>
+    Now that the king is confined to two squares in the corner, we can move our king over and use it to help deliver checkmate.  
+    After moving our king to the space 2 diagnol from the corner, we can move the queen into the space 1 diagnol front the corner, checkmating the enemy king.  
+  </p>
+  <iframe id="10810083" allowtransparency="true" frameborder="0" style="width:50%;border:none;" src="https://www.chess.com/emboard?id=10810083" class="center"></iframe>
+  <script>window.addEventListener("message",e=>{e['data']&&"10810083"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+
+  <hr width="100%">
+
+  <div id="kingandpawnvsking"></div>
+  <h2>King and Pawn vs King Engame</h2>
+  <p>
+    The king and pawn vs king engame occurs when one player is left with their king and one pawn and the other player has lost all of their pieces, leaving them with only their king.  
+    Here the side with the pawn aims to reach their opponents side with the pawn and promote, giving them a queen they can use to deliver checkmate.  
+    The side with just the king plays for a draw, aiming to capture his opponents pawn.  
+    In most situations, with proper play, the side with the pawn should be able to win.
+  </p>
+  <p>
+    There are two main variations of this engame.  
+    One occurs when the pawn is located on one of the edges of the board, either the A file or the G file, and the other occcurs when the pawn is not on one of these two files and is instead in the middle of the board.  
+    In either variation the side with the pawn will win if they are able to get their pawn to the end and promote it, and their opponent can force a draw if they are able to either capture the pawn (causing a draw due to insufficient material), or stop the pawn from promoting.  
+    The variant in which the pawn is on the side of the board is significantly more difficult to win for the side with the pawn, and in some cases, depending on the location of the enemy king, may be impossible to win and always result in a draw.  
+    If the enemy king is able to either capture the pawn, or make it to the any square in front of the pawn, then the game will result in a draw.  
+    Take this position as an example.  
+  </p>
+  <img src="images/42.png" class="center" style="width:50%;height:auto;">
+  <p>
+    Here the enemy king has managed to occupy a square in front of the pawn, and as such, no matter what white does, black will be able to force a draw.  
+    For example, if white chooses to push their pawn forwards, this causes a draw by stalemate, as the black king has no squares to move to, but is not in check.  
+  </p>
+  <img src="images/43.png" class="center" style="width:50%;height:auto;">
+  <p>
+    Alternativley, if white decides to move their king, black will be able to move forwards, directly in front of the pawn.  
+    This prevents the pawn from moving forwards and promoting.
+  </p>
+  <img src="images/44.png" class="center" style="width:50%;height:auto;">
+  <p>
+    So we can see that in this scenario, there is no way for white to win.  
+    In cases where the pawn is on one of the edges it is still sometimes possible for white to win.  
+    To do this, white must use their king to block their opponents king from entering a square in front of their pawn.  
+    For example, there is this position.  
+  </p>
+  <img src="images/45.png" class="center" style="width:50%;height:auto;">
+  <p>
+    Here the white king is blocking the black hing from entering any of the squares in front of the pawn, which means white can push their pawn forwards and promote without black being able to block it.  
+  </p>
+  <iframe id="10802209" allowtransparency="true" frameborder="0" style="width:50%;border:none;" src="https://www.chess.com/emboard?id=10802209" class="center"></iframe>
+  <script>window.addEventListener("message",e=>{e['data']&&"10802209"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+  <p>
+    Next we will discuss the version of this endgame in which the pawn is not located on one of the edges of the board.  
+    This position is winnable most of the time for the player with the pawn, but it is critical that the player makes the correct move.  
+    In this position the first order of buissness should always be to get your king directly in front of the pawn, as if the enemy king gets there they will be able to force a draw.
+    So, as an example, in this position white should start not by pushing their pawn forwards, but rather by moving their king in front of the pawn.  
+  </p>
+  <img src="images/46.png" class="center" style="width:50%;height:auto;">
+  <img src="images/47.png" class="center" style="width:50%;height:auto;">
+  <p>
+    From here we can see that the black king is directly in front of the white one, and it is black's turn to move.  
+    This is important and is known as "having the opposition."  
+    Without this the black player can still force a draw.  
+    For example, if black's king was located one square to the side, they would be able to move it directly in front of our king for our turn, in which case we would be forced to move our king away from the front of the pawn.  
+    However, if we have the opposition, black is forced to move their king away from in front of our pawn, in which case we can move our king into the space opened up by this.  
+  </p>
+  <img src="images/48.png" class="center" style="width:50%;height:auto;">
+  <p>
+    Now, if black moves their king down the board towards our pawn, we are able to simply push the pawn forwards through the safe space created by our king.
+  </p>
+  <img src="images/49.png" class="center" style="width:50%;height:auto;">
+  <p>
+    Alternativley, if black moves their king up and back in front of our pawn, we can simply move our king back in front and regain the opposition, meaning they have to move out of the way again.  
+    This moves our king further up the board, which provides a protected area for the pawn to move through
+  </p>
+  <img src="images/50.png" class="center" style="width:50%;height:auto;">
+  <img src="images/51.png" class="center" style="width:50%;height:auto;">
+  <p>
+    This can than be continued until we have moved our pawn all the way up the board and can promote.  
+  </p>
+  <iframe id="10806021" allowtransparency="true" frameborder="0" style="width:50%;border:none;" src="https://www.chess.com/emboard?id=10806021" class="center"></iframe>
+  <script>window.addEventListener("message",e=>{e['data']&&"10806021"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+
+  <hr width="100%">
+
+  <div id="about">
+    <p style="text-align:left;">
+      Coded By: Finn Cullen
+      <span style="float:right;">
+          2023
+      </span>
+    </p>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
