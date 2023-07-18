@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <title>Learn Chess</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="site.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+  
+<body>
+
+<nav id="nav01"></nav>
+
+  <div id="main">
+  <h1>Rules</h1>
+  <p>
+    This section will teach you the rules of the game.  
+    We will start with the board set up, then cover the movement of each piece, and end with and special rules.
+  </p>
+
+  <hr width="100%">
+
+  <h2>
+    Table of Contents
+  </h2>
+  <a href="#setup">- General Rules and Setup</a>
+  <br>
+  <a href="#pawn">- Pawn</a>
+  <br>
+  <a href="#rook">- Rook</a>
+  <br>
+  <a href="#bishop">- Bishop</a>
+  <br>
+  <a href="#knight">- Knight</a>
+  <br>
+  <a href="#queen">- Queen</a>
+  <br>
+  <a href="#king">- King</a>
+  <br>
+  <a href="#special">- Special Moves</a>
+  <br>
+  <a href="#castling"><span style="margin-left:2em"></span>- Castling</a>
+  <br>
+  <a href="#promotion"><span style="margin-left:2em"></span>- Promotion</a>
+  <br>
+  <a href="#passant"><span style="margin-left:2em"></span>- En Passant</a>
+  <br>
+  <a href="#draws">- Draws</a>
+  <br>
+  <a href="#agreement"><span style="margin-left:2em"></span>- Agreement</a>
+  <br>
+  <a href="#stalemate"><span style="margin-left:2em"></span>- Stalemate</a>
+    <br>
+  <a href="#repetition"><span style="margin-left:2em"></span>- Repetition</a>
+    <br>
+  <a href="#insufficient"><span style="margin-left:2em"></span>- Insufficient Material</a>
+    <br>
+  <a href="#50"><span style="margin-left:2em"></span>- 50 Move Rule</a>
+
+  <hr width="100%">
+
+  <div id="setup"></div>
+  <h2>General Rules and Setup</h2>
+  <p>
+    Chess is played on an 8x8 grid, with squares alternating between light and dark as seen below.  
+    To play, each side takes turns moving a piece according to the rules in later sections of this page.
+    The player with the white pieces will make the first move.  
+    The players take turns moving their pieces and capturing there opponent pieces.  
+    Capturing happens when one player moves a piece onto a space with one of there opponents piece's, in which case the opponent's piece is removed from the game.
+    The ultimate goal of the game is to get the opponents king into a state called "checkmate."  
+    This happens when you are threatening a capture on the enemy king, and the opponent can't do anything to prevent you capturing it on the next turn.
+    If this state is reached, the game is over, and the checkmated player loses.
+  </p>
+  <p>
+    To setup the board, each square is typicaly assigned a coordinate value based on the numbers and letters that can be seen on the left and bottom of the board.  
+    For example, the bottom left square would be "a1" and the top right would be "h8."  
+    The movement of pieces can be written down by first indicating the starting coordinate of the piece and then the ending coordinate, so a movement from the bottom right to the top left would be "h1 a8"
+  </p>
+  <img src="images/2.png" class="center" style="width:50%;height:auto;">
+  <p>
+    The initial setup of the board, going from left to right is as follows: Rook, Knight, Bishop, Queen, King, Bishop, Knight, Rook.  
+  </p>
+  <img src="images/3.png" class="center" style="width:50%;height:auto;">
+  <p>
+    A line of pawns is then placed in front of this to complete whites starting position.  
+    Then, to setup blacks position you mirror whites position to the other side of the board.  
+    Keep in mind that both sides kings should be directly across from each other.  
+    A good way to remember this is to think that the queens always start on their own colour.
+  </p>
+  <img src="images/4.png" class="center" style="width:50%;height:auto;">
+
+  <hr width="100%">
+
+  <div id="pawn"></div>
+  <h2>Pawn</h2>
+  <p>
+    The pawn is the weakest piece on the chess board, having a value of 1 point.  
+    They can move straight forward one square, but can not capture moving forwards.  
+    They can only capture by moving diagonaly forwards, either left or right.
+  </p>
+  <img src="images/1.png" class="center" style="width:50%;height:auto;">
+  <p>
+    If the pawn has not yet moved in the game, meaning it is still at it's starting position, you can choose to move it either 1 space forwards, as usual, or 2 spaces forwards.
+    This allows you to develope you pawns faster.
+  </p>
+  <img src="images/5.png" class="center" style="width:50%;height:auto;">
+
+  <hr width="100%">
+
+  <div id="rook"></div>
+  <h2>Rook</h2>
+  <p>
+    The rook can move as many squares as you want either horizontaly or verticaly.  
+    It captures by moving into the opponents piece.
+  </p>
+  <img src="images/6.png" class="center" style="width:50%;height:auto;">
+
+  <hr width="100%">
+
+  <div id="bishop"></div>
+  <h2>Bishop</h2>
+  <p>
+    The rook can move as many squares as you want diagonaly, either forwards or backwards.  
+    It captures by moving into the opponents piece.
+  </p>
+  <img src="images/7.png" class="center" style="width:50%;height:auto;">
+  <p>
+    Because of the way the bishop moves, it will always be on the same color square that it started on.  
+    Because of this, the bishops are often reffered to as either you light squared bishop or your dark squared bishop.
+  </p>
+
+  <hr width="100%">
+
+  <div id="knight"></div>
+  <h2>Knight</h2>
+  <p>
+    The knight can move in an L shape, moving 2 spaces forwards, backwards, or to either side, and then moving 1 space sideways from there.  
+    It is also the only piece that can jump over other pieces, it can jump straight to it's final position without capturing or being blocked by any pieces in between.
+  </p>
+  <img src="images/9.png" class="center" style="width:50%;height:auto;">
+
+  <hr width="100%">
+
+  <div id="queen"></div>
+  <h2>Queen</h2>
+  <p>
+    The queen combines the movements of both a rook and a bishop.  
+    This means it can move as many squares as it wants horizontaly and verticaly like a rook, but also as many as it wants diagonaly, like a bishop.  
+    This makes it the most powerful piece on the chess board.
+  </p>
+  <img src="images/8.png" class="center" style="width:50%;height:auto;">
+
+  <hr width="100%">
+  
+  <div id="king"></div>
+  <h2>King</h2>
+  <p>
+    The king can move 1 square in any direction, verticaly, horizontaly, and diagonaly.  
+    It is not a very powerful piece, but it is the most important piece on the board, as you can't let your opponent capture it.  
+    If your opponent gets you in a position in which they can capture your piece on their next turn, it is called checkmate, and they win the game.
+  </p>
+  <img src="images/10.png" class="center" style="width:50%;height:auto;">
+
+  <hr width="100%">
+  
+  <div id="special"></div>
+  <h2>
+    Special Moves
+  </h2>
+  <div id="castling"></div>
+  <h3>
+    Castling
+  </h3>
+  <p>
+    Caslting is a move that allows you to move your king two spaces to either side and move the rook on that side to the space the king passed over.  
+    This move is only allowed if: neither your king nor the rook on the side you are castling have moved, the king is not in check, and would not move through check to castle, and there are no pieces between the king and the rook.  
+    This move is useful as it can get your king into a safer position, and helps develope your rook, making it more useful.
+    For an example, in the following example, white can castle either to the left or to the right, as shown.
+  </p>
+  <img src="images/11.png" class="center" style="width:50%;height:auto;">
+  <img src="images/12.png" class="center" style="width:50%;height:auto;">
+  <img src="images/13.png" class="center" style="width:50%;height:auto;">
+  <div id="promotion"></div>
+  <h3>Promotion</h3>
+  <p>
+    When any one of your pawns reaches the opponents end of the board (either the 8th or 1st rank depending on your color), you are allowed to promote that pawn.  
+    This means you can change it from a pawn to any other piece, excluding the king.  
+    This means the pwn can be made into either a knight, a bishop, a rook, or a queen.  
+    This movement is very powerful, and plays a large role in endgame, where most often the goal is to promote your pawn before the other player to secure your win.
+  </p>
+  <img src="images/14.png" class="center" style="width:50%;height:auto;">
+  <img src="images/15.png" class="center" style="width:50%;height:auto;">
+  <div id="passant"></div>
+  <h3>
+    En Passant
+  </h3>
+  <p>
+    En passant is a special move that only takes place in very rare scenarios.  
+    It is French for "in passing,"" and was implemented at the same time pawns were first allowed to move two squares forward on their first move.  
+    Chess players at the time were concerned that this ability to move two spaces forward would allow pawns to sneak past other pawns in ways they couldn't before, and ended up implementing this rule to prevent this.  
+    It states that if a enemy pawn moves18 forward 2 squares from it's starting position, and ends up directly beside one of your pawns, you are allowed to move diagonaly behind that pawn and capture it "in passing."  
+  </p>
+  <img src="images/16.png" class="center" style="width:50%;height:auto;">
+  <img src="images/17.png" class="center" style="width:50%;height:auto;">
+
+  <hr width="100%">
+
+  <div id="draws"></div>
+  <h2>
+    Draws
+  </h2>
+  <p>
+    There are various different ways in which a chess game can end in a draw, where no winner is decided.  
+    This section will teach about the various forms of draws.
+  </p>
+  <div id="agreement"></div>
+  <h3>
+    Agreement
+  </h3>
+  <p>
+    A draw by agreement happens when both players agree to end the game in a draw.  
+    This often happens when both players can see that the game will end in a draw in a different way later in the game.
+  </p>
+  <div id="stalemate"></div>
+  <h3>
+    Stalemate
+  </h3>
+  <p>
+    A stalemate happens when it is a players turn and they have no legal moves they can make, but are not in checkmate.  
+    This end the game in a draw.  
+    When you're winning near the end of the game this is something to watch out for.  
+    An example of a stalemate position is below, the king cannot move, but is not in check, so it is stalemate.  
+  </p>
+  <img src="images/18.png" class="center" style="width:50%;height:auto;">
+  <div id="repetition"></div>
+  <h3>
+    3 Fold Repetition
+  </h3>
+  <p>
+    3 fold repetition happens when a sequence of moves is repeated multiple times in a game.  
+    If in a game the same position has appeared 3 times, with the same player to move each time, this rule comes into effect and the game is a draw.    
+  </p>
+  <div id="insufficient"></div>
+  <h3>
+    Insufficient Material
+  </h3>
+  <p>
+    This draw happens when both players do not have enough pieces to checkmate the opponet.  
+    There are many combinations of pieces which would produce this type of draw, such as an engame in which one player has a king and a bishop and the other has only a king, making checkmate impossible.
+  </p>
+  <img src="images/19.png" class="center" style="width:50%;height:auto;">
+  <div id="50"></div>
+  <h3>
+    50 Move Rule
+  </h3>
+  <p>
+    This is a rare form of draw, and only happens when, in the past 50 move, neither player has captured a piece, or pushed a pawn.  
+    This is to prevent games from going on ideffinetly without either player winning.
+  </p>
+
+  <hr width="100%">
+
+  <div id="about">
+    <p style="text-align:left;">
+      Coded By: Finn Cullen
+      <span style="float:right;">
+          2023
+      </span>
+    </p>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

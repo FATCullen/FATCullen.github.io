@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <title>Learn Chess</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="site.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+  
+<body>
+
+<nav id="nav01"></nav>
+
+  <div id="main">
+  <h1>Midgame</h1>
+  <p>
+    This section will focus on the midgame section of a chess game.  
+    In chess the midgame is the majority of the gameplay, and comes after the initial opening, usualy starting after both sides castle.  
+    This section will teach various tactics and things to watch out for in the midgame to help you get ahead of your opponents.
+  </p>
+
+  <hr width="100%">
+
+  <h2>
+    Table of Contents
+  </h2>
+  <a href="#forks">- Forks</a>
+  <br>
+  <a href="#rooktraps">- Rook Traps</a>
+  
+  <hr width="100%">
+  
+  <div id="forks"></div>
+  <h2>Forks</h2>
+  <p>
+    In chess, a fork is when one player's piece attacks two or more of their opponent's pieces at the same time.  
+    In this situation the opponent is only able to move one of their pieces out of danger, and you are able to capture the other.  
+    A fork can be accomplished using any piece besides the king, an example of a fork with each piece is below.
+  </p>
+  <img src="images/32.png" class="center" style="width:50%;height:auto;">
+  <img src="images/33.png" class="center" style="width:50%;height:auto;">
+  <img src="images/34.png" class="center" style="width:50%;height:auto;">
+  <img src="images/35.png" class="center" style="width:50%;height:auto;">
+  <img src="images/36.png" class="center" style="width:50%;height:auto;">
+  <p>
+    The most common piece a fork is accomplished with is a knight, due to it's L shaped movements.
+    An example of a common situation in which a fork is done is shown below.  
+    We can see that the opponent has moved their queen out of the way, which leaves the pawn on the C file vulnerable to our knight.
+  </p>
+  <img src="images/37.png" class="center" style="width:50%;height:auto;">
+  <p>
+    When we take that pawn we are now attacking both their rook and their king, putting them in check.  
+    They have to move their king out of harms way which allows us to take their rook in the corner.
+  </p>
+  <img src="images/38.png" class="center" style="width:50%;height:auto;">
+  <p>
+    It is important to try to get into this position in a chess game, as well as watch out for your opponent trying to do the same to you.  
+    Another example, this time a puzzle for you to figure out, is shown below.
+  </p>
+  <iframe id="10798219" allowtransparency="true" frameborder="0" style="width:50%;border:none;" src="https://www.chess.com/emboard?id=10798219" class="center"></iframe>
+  <script>window.addEventListener("message",e=>{e['data']&&"10798219"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+
+  <hr width="100%">
+
+  <div id="rooktraps"></div>
+  <h2>
+    Rook Traps
+  </h2>
+  <p>
+    Another common situation is shown here.  
+    During the opening we fianchettoed our bishop, as mentioned in the section on oppenings, wbich puts it on the long diagnol line of our board.  
+    Our opponent then develops their bishop, moving it out of the way.  
+    However this takes away the defense on their B pawn, leaving it vulnerable to our bishop. 
+  </p>
+  <img src="images/39.png" class="center" style="width:50%;height:auto;">
+  <p>
+    This allows us to capture this B pawn, which means our bishop is now attacking our enemies rook.  
+  </p>
+  <img src="images/40.png" class="center" style="width:50%;height:auto;">
+  <p>
+    Since this rook is in the corner and is boxed in by the pawn in front and the night beside it, it is effectivley trapped.  
+    The enemy has no way to defend their trapped rook, meaning no matter what they do on their next move, we will be able to capture it
+  </p>
+  <img src="images/41.png" class="center" style="width:50%;height:auto;">
+  <p>
+    Due to the long ranged nature of this attack, it can often be difficult to see coming.  
+    This is part of the reason fiancettoed bishops are so powerful, they provide this constant threat to the rook, and mean that the opponent has to take special care not to move their B pawn or leave it undefended.  
+    However this threat goes both ways, and it is always important to be on the lookout for this tactic if your opponent has their bishop out.
+  </p>
+
+
+  <hr width="100%">
+
+  <div id="about">
+    <p style="text-align:left;">
+      Coded By: Finn Cullen
+      <span style="float:right;">
+          2023
+      </span>
+    </p>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
